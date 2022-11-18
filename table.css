@@ -1,0 +1,16 @@
+body {
+  background-image: url("74166.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   color: #f8de7e;
+   margin:auto;
+   position:relative;
+}
+
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}

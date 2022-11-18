@@ -1,0 +1,148 @@
+<head>
+	<style>
+	
+.button {
+  background-color: #0078c1; 
+  border: 2px solid #1c3f94;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  padding: 8px 16px;
+  text-align: center;
+  border: 2px solid #1c3f94;
+  margin: 4px 2px;
+  background-color: #00bce4;
+  color: black;
+}	
+
+.button2:hover {
+  padding: 8px 16px;
+  text-align: center;
+  border: 2px solid #1c3f94;
+  margin: 4px 2px;
+  background-color: #00bce4;
+  color: black;
+}	
+	
+	
+body {
+    background-image: url("74166.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   color: #f8de7e;
+     margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 1495px;
+
+}
+
+input[type=submit], input[type=reset] {
+ background-color: #0078c1; 
+  border: 2px solid #1c3f94;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  padding: 8px 16px;
+  text-align: center;
+  border: 2px solid #1c3f94;
+  margin: 4px 2px;
+  background-color: #00bce4;
+  color: black;
+}	
+
+
+
+p {
+  color: #f8de7e;
+  font-size: 20px;
+}
+
+h1 {
+-webkit-text-stroke: 0.px yellow;
+	color: red;
+}
+
+
+h2 {
+	color: #f8de7e;
+}
+
+input:hover{
+	background-color: #ededed;
+	
+}
+
+
+
+
+
+	</style>
+	<meta charset="utf-8">
+	<title> KEYSOFT - ADMIN MODE </title>
+</head>
+<center>
+
+
+<h1>ADMIN MODE</h1>
+<br><br>
+
+<form action="admin_add.php" method="get" enctype="text/plain"><div>
+<!-- Podstawowe pole tekstowe -->
+<p style="font-size:40px;">- KEYSOFT -</p>
+<!-- Pole typu RADIO -->
+<p>Producent: </p>
+<input type="radio" name="Producent" value="Ubisoft">Ubisoft <br>
+<input type="radio" name="Producent" value="EA">Electronic Arts <br>
+<input type="radio" name="Producent" value="CDProjektRed">CD Projekt Red <br>
+<input type="radio" name="Producent" value="SquareEnix">Square Enix <br>
+<input type="radio" name="Producent" value="SCSSoftware">SCS Software <br>
+
+<p>Tytuł:</p>
+<input name="Tytul"><br>
+
+<p>Cena:</p>
+<input name="Cena"><br>
+
+<p>Klucz:</p>
+<input name="Klucz"><br>
+<br><br><br>
+
+<script>
+function dodaj()
+{
+	var producent = document.getElementById("Producent").value;
+	var tytul = document.getElementById("Tytul").value;
+	var cena = document.getElementById("Cena").value;
+	var klucz = document.getElementById("Klucz").value;
+	
+}
+</script>
+
+<!-- Przycisk WYŚLIJ -->
+<!-- <button class="button button1" onclick="dodaj()"> <strong>Dodaj</strong></button> -->
+<input type="submit" value="Dodaj">
+<!-- Przycisk WYCZYŚĆ DANE -->
+<!-- <button class="button button2" onclick="wyczysc()"> <strong>Wyczyść</strong></button> -->
+<input type="reset" value="Wyczyść">
+</div></form>
+</center>

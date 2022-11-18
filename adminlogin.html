@@ -1,0 +1,214 @@
+<head>
+	<style>
+	
+.button {
+  background-color: #0078c1; 
+  border: 2px solid #1c3f94;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  padding: 8px 16px;
+  text-align: center;
+  border: 2px solid #1c3f94;
+  margin: 4px 2px;
+  background-color: #00bce4;
+  color: black;
+}	
+
+.button2:hover {
+  padding: 8px 16px;
+  text-align: center;
+  border: 2px solid #1c3f94;
+  margin: 4px 2px;
+  background-color: #00bce4;
+  color: black;
+}	
+	
+	
+body {
+   background-image: url("74166.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   color: #f8de7e;
+     margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 1495px;
+
+}
+
+input[type=submit], input[type=reset] {
+ background-color: #0078c1; 
+  border: 2px solid #1c3f94;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  padding: 8px 16px;
+  text-align: center;
+  border: 2px solid #1c3f94;
+  margin: 4px 2px;
+  background-color: #00bce4;
+  color: black;
+}	
+
+
+
+p {
+  color: #f8de7e;
+  font-size: 20px;
+}
+
+h1 {
+-webkit-text-stroke: 0.px yellow;
+	color: red;
+}
+
+
+h2 {
+	color: #f8de7e;
+}
+
+input:hover{
+	background-color: #ededed;
+	
+}
+
+
+.myDiv {
+
+  border: 5px outset gray;
+  
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+#correct{
+	color:green;
+}
+
+#incorrect{
+	color:red;
+}
+
+	</style>
+	<meta charset="utf-8">
+	<title> KEYSOFT - ADMIN LOGIN </title>
+</head>
+<center>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Podstawowe pole tekstowe -->
+<div class="myDiv">
+<p style="font-size:20px;">- KEYSOFT LOGIN -</p>
+<input type="text" id="login" placeholder="Login"><br><br>
+<input type="password" id="password" placeholder="Password"><br>
+
+<p id="correct"></p>
+<p id="incorrect"></p>
+
+
+
+<script>
+
+document.addEventListener("keydown", function (event){    if (event.ctrlKey){       event.preventDefault();    }    if(event.keyCode == 123){       event.preventDefault();    }});
+
+document.addEventListener('contextmenu', 
+     event => event.preventDefault()
+);
+
+ function sleep(milliseconds) {  
+      return new Promise(resolve => setTimeout(resolve, milliseconds));  
+   }  
+
+function login()
+{
+	// var nam  = document.getElementById("Name").value;
+	// var pass = document.getElementById("Password").value;
+	
+
+	if((document.getElementById('login').value == 'retr0') && (document.getElementById('password').value == 'zaq1@'))
+		{	
+			
+			let text;
+			text = "Correct password!";
+			document.getElementById("correct").innerHTML = text;
+			
+			   async function sleepypass1() {       
+         await sleep(1500); 
+location.href = "adminpanel.html"; 
+   }  
+   sleepypass1();  
+			
+			
+		}
+		else 
+		{
+
+			let text1;
+			text1 = "Incorrect password!";
+			
+			document.getElementById("incorrect").innerHTML = text1;
+			
+					 
+   async function sleepypass1() {       
+         await sleep(1500); 
+  window.location.reload();
+   }  
+   sleepypass1();  
+			
+			
+		}	
+	
+	
+	
+	
+}
+</script>
+
+<button class="button button1" onclick="login()"> <strong>Login</strong></button>
+<br><br>
+</div>
+
+
+
+
+</center>

@@ -1,0 +1,94 @@
+<head>
+	<style>
+	
+body {
+  background-image: url("74166.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   color: #f8de7e;
+   margin:auto;
+   position:relative;
+}
+
+#myProgress {
+  width: 80%;
+  background-color: #dde;
+    font-size: 25px;
+  margin:auto;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: navy;
+  color: white;
+}
+
+p {
+  color: #f8de7e;
+  font-size: 20px;
+
+}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<script>
+
+var i = 0;
+window.onload = function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+
+</script>
+
+	 
+
+<center>
+
+<!-- Podstawowe pole tekstowe -->
+<br><br>
+<p style="font-size:40px;">- KEYSOFT - <br> <span style="font-size:19px;">The Cheapest Keys On The Market</span></p>
+<br><br><br><br><br><br><br>
+<p style="font-size:40px;">Płatność w toku...</p>
+</center>
+
+
+
+<div id="myProgress">
+  <div id="myBar">10%</div>
+</div>
+
+<script>
+
+
+
+</script>
+
+<!-- Przycisk WYŚLIJ -->
+<!-- <button class="button button1" onclick="szukaj()"> <strong>Szukaj</strong></button> -->
+<!--  <input type="submit" value="Szukaj"> -->
+<!-- Przycisk WYCZYŚĆ DANE -->
+<!-- <button class="button button2" onclick="wyczysc()"> <strong>Wyczyść</strong></button> -->
+<!-- <input type="reset" value="Wyczyść"> -->
+<br><br>
+
+</div></div></form>
+
